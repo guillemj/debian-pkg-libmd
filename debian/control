@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: GNU/kFreeBSD Maintainers <debian-bsd@lists.debian.org>
 Uploaders: Guillem Jover <guillem@debian.org>, Aurelien Jarno <aurel32@debian.org>
 Build-Depends: debhelper (>= 7), freebsd-buildutils, libbsd-dev
-Vcs-Browser: http://svn.debian.org/wsvn/glibc-bsd/trunk/libmd/
-Vcs-Svn: svn://svn.debian.org/glibc-bsd/trunk/libmd/
+Vcs-Browser: http://anonscm.debian.org/viewvc/glibc-bsd/trunk/libmd/
+Vcs-Svn: svn://anonscm.debian.org/glibc-bsd/trunk/libmd/
 Standards-Version: 3.9.2
 
 Package: libmd-dev
