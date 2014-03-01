@@ -1,11 +1,10 @@
 Source: libmd
 Section: libs
 Priority: optional
-Maintainer: GNU/kFreeBSD Maintainers <debian-bsd@lists.debian.org>
-Uploaders: Guillem Jover <guillem@debian.org>, Aurelien Jarno <aurel32@debian.org>
+Maintainer: Guillem Jover <guillem@debian.org>
 Build-Depends: debhelper (>= 7), freebsd-buildutils, libbsd-dev
-Vcs-Browser: http://anonscm.debian.org/viewvc/glibc-bsd/trunk/libmd/
-Vcs-Svn: svn://anonscm.debian.org/glibc-bsd/trunk/libmd/
+Vcs-Browser: http://git.hadrons.org/?p=debian/pkgs/libmd.git
+Vcs-Git: git://git.hadrons.org/git/debian/pkgs/libmd.git
 Standards-Version: 3.9.2
 
 Package: libmd-dev
