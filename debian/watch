@@ -1,3 +1,3 @@
-version=3
-
-# There's no actual releases of libmd.
+version=4
+opts="pgpsigurlmangle=s/$/.asc/"
+https://archive.hadrons.org/software/libmd/	libmd-([\d\.-]*)\.tar\.xz	debian	uupdate

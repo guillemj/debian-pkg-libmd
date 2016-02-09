@@ -3,42 +3,41 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-CFLAGS = -Wall -g -pipe -fPIC -D_GNU_SOURCE -D'__FBSDID(string)=' -D__va_list=__builtin_va_list
+DEB_BUILD_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+DEB_HOST_GNU_TYPE ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
-ifneq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
-	CFLAGS += -O0
+CPPFLAGS = $(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS = -Wall $(shell dpkg-buildflags --get CFLAGS)
+LDFLAGS = $(shell dpkg-buildflags --get LDFLAGS)
+
+ifeq ($(DEB_BUILD_GNU_TYPE), $(DEB_HOST_GNU_TYPE))
+	confflags += --build=$(DEB_HOST_GNU_TYPE)
 else
-	CFLAGS += -O2
+	confflags += --build=$(DEB_BUILD_GNU_TYPE) --host=$(DEB_HOST_GNU_TYPE)
 endif
 
-DBG = libmd0-dbg
+D = $(CURDIR)/debian
 
-SOURCE = libmd
-VERSION = $(shell dpkg-parsechangelog | sed -e '/^Version:/!d' -e 's/^Version: //g' -e 's/-.*//g')
-SVN = http://svn.freebsd.org/base/release/$(VERSION).0
-ORIGDIR = $(SOURCE)-$(VERSION)
-TARNAME = $(SOURCE)_$(VERSION).orig.tar.gz
+config.status: configure
+	dh_testdir
+	dh_autotools-dev_updateconfig
 
-PATH := /usr/lib/freebsd:$(PATH)
-DESTDIR = $(CURDIR)/debian/tmp
-PMAKE = COPTS="$(CFLAGS)" CFLAGS="$(CFLAGS)" NO_WERROR=1 NOGCCERROR=1 NOSHARED=NO NO_SHARED=NO DEBUG_FLAGS="-g" DESTDIR=$(DESTDIR) make
-
-export SHLIB_MAJOR = 0
-
-get-orig-source:
-	rm -rf $(ORIGDIR)
-	for i in lib/libmd ; do \
-	    svn export $(SVN)/$$i $(ORIGDIR)/$$i ; \
-	done
-	tar --numeric-owner --owner 0 --group 0 -czf ../$(TARNAME) $(ORIGDIR)
-	rm -rf $(ORIGDIR)
+	./configure \
+		CPPFLAGS="$(CPPFLAGS)" \
+		CFLAGS="$(CFLAGS)" \
+		LDFLAGS="$(LDFLAGS)" \
+		$(confflags) \
+		--disable-silent-rules \
+		--prefix=/usr \
+		--libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
 
 build-indep:
 
-build-arch:
+build-arch: config.status
 	dh_testdir
 
-	$(PMAKE) -C $(CURDIR)/lib/libmd SHLIBDIR=./
+	$(MAKE)
 
 build: build-indep build-arch
 
@@ -46,8 +45,9 @@ clean:
 	dh_testdir
 	dh_testroot
 
-	$(PMAKE) -C $(CURDIR)/lib/libmd clean
+	[ ! -f Makefile ] || $(MAKE) distclean
 
+	dh_autotools-dev_restoreconfig
 	dh_clean
 
 install-indep:
@@ -58,8 +58,8 @@ install-arch: build
 	dh_prep
 	dh_installdirs -a
 
-	mkdir -p $(DESTDIR)/usr/lib $(DESTDIR)/usr/include $(DESTDIR)/usr/share/man/man3
-	$(PMAKE) -C $(CURDIR)/lib/libmd install SHLIBDIR=/usr/lib DESTDIR=$(DESTDIR)
+	$(MAKE) install DESTDIR=$(D)/tmp \
+	                runtimelibdir=/lib/$(DEB_HOST_MULTIARCH)
 
 install:
 
@@ -69,12 +69,12 @@ binary-indep: install-indep
 binary-arch: install-arch
 	dh_testdir
 	dh_testroot
+	dh_install -a --list-missing
 	dh_installchangelogs -a
 	dh_installdocs -a
 	dh_installman -a
-	dh_install -a --list-missing
 	dh_link -a
-	dh_strip -a --dbg-package=$(DBG)
+	dh_strip -a
 	dh_compress -a
 	dh_fixperms -a
 	dh_makeshlibs -a
