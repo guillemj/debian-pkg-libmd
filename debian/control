@@ -34,12 +34,3 @@ Description: message digest functions from BSD systems - shared library
  The libmd library provides various message digest ("hash") functions,
  as found on various BSDs on a library with the same name and with a
  compatible API.
-
-Package: libmd0-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Depends: libmd0 (= ${binary:Version}), ${misc:Depends}
-Description: message digest functions from BSD systems - debugging symbols
- This library provides message digest functions commonly available on the
- BSDs base system but not on others like GNU systems.
