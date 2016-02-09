@@ -2,7 +2,7 @@ Source: libmd
 Section: libs
 Priority: optional
 Maintainer: Guillem Jover <guillem@debian.org>
-Build-Depends: debhelper (>= 7), freebsd-buildutils, libbsd-dev
+Build-Depends: debhelper (>= 9), freebsd-buildutils, libbsd-dev
 Vcs-Browser: http://git.hadrons.org/?p=debian/pkgs/libmd.git
 Vcs-Git: git://git.hadrons.org/git/debian/pkgs/libmd.git
 Standards-Version: 3.9.2
