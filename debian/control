@@ -3,8 +3,8 @@ Section: libs
 Priority: optional
 Maintainer: Guillem Jover <guillem@debian.org>
 Build-Depends: debhelper (>= 9), autotools-dev
-Vcs-Browser: http://git.hadrons.org/?p=debian/pkgs/libmd.git
-Vcs-Git: git://git.hadrons.org/git/debian/pkgs/libmd.git
+Vcs-Browser: https://git.hadrons.org/cgit/debian/pkgs/libmd.git
+Vcs-Git: https://git.hadrons.org/git/debian/pkgs/libmd.git
 Homepage: https://www.hadrons.org/software/libmd/
 Standards-Version: 3.9.2
 
