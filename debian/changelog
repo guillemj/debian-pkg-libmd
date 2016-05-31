@@ -1,3 +1,9 @@
+libmd (0.0.0-2) UNRELEASED; urgency=medium
+
+  * Switch to the dpkg makefile fragments in debian/rules.
+
+ -- Guillem Jover <guillem@debian.org>  Tue, 31 May 2016 19:55:24 +0200
+
 libmd (0.0.0-1) unstable; urgency=medium
 
   * Initial release. (Closes: #609757)
