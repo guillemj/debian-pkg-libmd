@@ -8,7 +8,6 @@ Homepage: https://www.hadrons.org/software/libmd/
 Standards-Version: 3.9.8
 Build-Depends:
  debhelper (>= 10),
- autotools-dev,
 
 Package: libmd-dev
 Section: libdevel
