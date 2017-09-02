@@ -1,3 +1,9 @@
+libmd (0.0.0-3) UNRELEASED; urgency=medium
+
+  * Line-wrap dependency fields.
+
+ -- Guillem Jover <guillem@debian.org>  Sat, 02 Sep 2017 20:04:36 +0200
+
 libmd (0.0.0-2) unstable; urgency=medium
 
   * Switch to the dpkg makefile fragments in debian/rules.
