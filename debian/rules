@@ -65,7 +65,7 @@ binary-indep: install-indep
 binary-arch: install-arch
 	dh_testdir
 	dh_testroot
-	dh_install -a --list-missing
+	dh_install -a
 	dh_installchangelogs -a
 	dh_installdocs -a
 	dh_installman -a
@@ -73,6 +73,7 @@ binary-arch: install-arch
 	dh_strip -a
 	dh_compress -a
 	dh_fixperms -a
+	dh_missing -a --list-missing
 	dh_makeshlibs -a
 	dh_installdeb -a
 	dh_shlibdeps -a
