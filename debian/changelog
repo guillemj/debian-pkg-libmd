@@ -4,7 +4,7 @@ libmd (0.0.0-3) UNRELEASED; urgency=medium
   * Switch to debhelper compatibility level 10.
   * Replace dh_autotools-dev_* commands with dh_update_autotools_config,
     and remove explicit Build-Depends on autotools-dev.
-  * Now using Standards-Version 4.1.0 (no changes needed).
+  * Now using Standards-Version 4.1.1 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Sat, 02 Sep 2017 20:04:36 +0200
 
