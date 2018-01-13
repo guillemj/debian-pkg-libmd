@@ -4,6 +4,7 @@ libmd (1.0.0-1) UNRELEASED; urgency=medium
   * Now using Standards-Version 4.1.3 (no changes needed).
   * Switch to debhelper compatibility level 11.
   * List the libtool .la file explicitly as missing in debian/not-installed.
+  * Add a missing continuation back slash in debian/watch.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 13 Jan 2018 19:50:16 +0100
 
