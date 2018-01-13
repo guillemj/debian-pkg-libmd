@@ -1,3 +1,9 @@
+libmd (1.0.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Guillem Jover <guillem@debian.org>  Sat, 13 Jan 2018 19:50:16 +0100
+
 libmd (0.0.0-3) unstable; urgency=medium
 
   * Line-wrap dependency fields.
