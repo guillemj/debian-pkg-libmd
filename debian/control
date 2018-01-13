@@ -8,7 +8,7 @@ Homepage: https://www.hadrons.org/software/libmd/
 Standards-Version: 4.1.3
 Rules-Requires-Root: no
 Build-Depends:
- debhelper (>= 10.3),
+ debhelper (>= 11),
 
 Package: libmd-dev
 Section: libdevel
