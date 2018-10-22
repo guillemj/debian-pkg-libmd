@@ -1,4 +1,4 @@
-libmd (1.0.1-1) UNRELEASED; urgency=medium
+libmd (1.0.1-1) unstable; urgency=medium
 
   * New upstream release.
     - Fixes some compatibility macros.
@@ -9,7 +9,7 @@ libmd (1.0.1-1) UNRELEASED; urgency=medium
   * Change the debian/rules binary-arch target to depend on build-arch.
   * Run the upstream test suite.
 
- -- Guillem Jover <guillem@debian.org>  Mon, 22 Oct 2018 13:07:57 +0200
+ -- Guillem Jover <guillem@debian.org>  Mon, 22 Oct 2018 13:13:07 +0200
 
 libmd (1.0.0-1) unstable; urgency=medium
 
