@@ -34,7 +34,11 @@ build-indep:
 build-arch: config.status
 	dh_testdir
 
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	$(MAKE) VERBOSE=1 check
+else
 	$(MAKE)
+endif
 
 build: build-indep build-arch
 
