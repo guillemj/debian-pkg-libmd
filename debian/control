@@ -5,7 +5,7 @@ Maintainer: Guillem Jover <guillem@debian.org>
 Vcs-Browser: https://git.hadrons.org/cgit/debian/pkgs/libmd.git
 Vcs-Git: https://git.hadrons.org/git/debian/pkgs/libmd.git
 Homepage: https://www.hadrons.org/software/libmd/
-Standards-Version: 4.1.3
+Standards-Version: 4.2.1
 Rules-Requires-Root: no
 Build-Depends:
  debhelper (>= 11.1),

@@ -5,6 +5,7 @@ libmd (1.0.1-1) UNRELEASED; urgency=medium
     - Adds a thin wrapper compatible with Aladding Enterprises MD5 independent
       implementation.
   * Remove empty debian/patches/series file.
+  * Now using Standards-Version 4.2.1 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Mon, 22 Oct 2018 13:07:57 +0200
 
