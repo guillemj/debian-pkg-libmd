@@ -6,6 +6,7 @@ libmd (1.0.1-1) UNRELEASED; urgency=medium
       implementation.
   * Remove empty debian/patches/series file.
   * Now using Standards-Version 4.2.1 (no changes needed).
+  * Change the debian/rules binary-arch target to depend on build-arch.
 
  -- Guillem Jover <guillem@debian.org>  Mon, 22 Oct 2018 13:07:57 +0200
 

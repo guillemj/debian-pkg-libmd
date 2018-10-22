@@ -48,7 +48,7 @@ clean:
 
 install-indep:
 
-install-arch: build
+install-arch: build-arch
 	dh_testdir
 	dh_testroot
 	dh_prep
