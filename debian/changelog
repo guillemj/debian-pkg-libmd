@@ -1,3 +1,12 @@
+libmd (1.0.1-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+    - Fixes some compatibility macros.
+    - Adds a thin wrapper compatible with Aladding Enterprises MD5 independent
+      implementation.
+
+ -- Guillem Jover <guillem@debian.org>  Mon, 22 Oct 2018 13:07:57 +0200
+
 libmd (1.0.0-1) unstable; urgency=medium
 
   * New upstream release.
