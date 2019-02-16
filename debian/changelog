@@ -1,3 +1,10 @@
+libmd (1.0.1-2) UNRELEASED; urgency=medium
+
+  * Perform a proper and correct /usr-merge transition by moving the package
+    contents from / to /usr.
+
+ -- Guillem Jover <guillem@debian.org>  Fri, 08 Feb 2019 22:27:47 +0100
+
 libmd (1.0.1-1) unstable; urgency=medium
 
   * New upstream release.

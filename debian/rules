@@ -58,8 +58,7 @@ install-arch: build-arch
 	dh_prep
 	dh_installdirs -a
 
-	$(MAKE) install DESTDIR=$(D)/tmp \
-	                runtimelibdir=/lib/$(DEB_HOST_MULTIARCH)
+	$(MAKE) install DESTDIR=$(D)/tmp
 
 install:
 
