@@ -1,3 +1,10 @@
+libmd (1.0.1-3) UNRELEASED; urgency=medium
+
+  * Switch to debhelper compatibility level 12.
+  * Switch from debian/compat to debhelper-commpat in Build-Depends.
+
+ -- Guillem Jover <guillem@debian.org>  Sat, 17 Aug 2019 15:49:01 +0200
+
 libmd (1.0.1-2) unstable; urgency=medium
 
   * Perform a proper and correct /usr-merge transition by moving the package
