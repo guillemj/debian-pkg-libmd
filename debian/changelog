@@ -3,6 +3,7 @@ libmd (1.0.1-3) UNRELEASED; urgency=medium
   * Switch to debhelper compatibility level 12.
   * Switch from debian/compat to debhelper-commpat in Build-Depends.
   * Switch to Standards-Version 4.4.0 (no changes needed).
+  * Switch to dh sequencer.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 17 Aug 2019 15:49:01 +0200
 
