@@ -3,6 +3,7 @@ libmd (1.0.1-4) UNRELEASED; urgency=medium
   * Switch to Standards-Version 4.5.1 (no changes needed).
   * Switch to debhelper compatibility level 13.
   * Remove duplicate pathname entries from debian/copyright.
+  * Add new debian/upstream/metadata file.
 
  -- Guillem Jover <guillem@debian.org>  Sat, 28 Nov 2020 19:56:55 +0100
 
