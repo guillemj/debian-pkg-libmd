@@ -1,5 +1,6 @@
-libmd (1.0.1-4) UNRELEASED; urgency=medium
+libmd (1.0.3-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
   * Switch to Standards-Version 4.5.1 (no changes needed).
   * Switch to debhelper compatibility level 13.
   * Remove duplicate pathname entries from debian/copyright.
