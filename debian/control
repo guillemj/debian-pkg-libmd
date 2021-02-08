@@ -40,3 +40,15 @@ Description: message digest functions from BSD systems - shared library
  The libmd library provides various message digest ("hash") functions,
  as found on various BSDs on a library with the same name and with a
  compatible API.
+
+Package: libmd0-udeb
+Package-Type: udeb
+Section: debian-installer
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: message digest functions from BSD systems - shared library
+ The libmd library provides various message digest ("hash") functions,
+ as found on various BSDs on a library with the same name and with a
+ compatible API.
