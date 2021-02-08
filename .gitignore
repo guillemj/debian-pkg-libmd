@@ -2,6 +2,7 @@
 *.dsc
 *.asc
 *.deb
+*.udeb
 *.buildinfo
 *.changes
 *.upload
