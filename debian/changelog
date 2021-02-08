@@ -1,3 +1,9 @@
+libmd (1.0.3-3) unstable; urgency=medium
+
+  * Source-only upload for testing migration.
+
+ -- Guillem Jover <guillem@debian.org>  Mon, 08 Feb 2021 18:09:24 +0100
+
 libmd (1.0.3-2) unstable; urgency=medium
 
   * List all symbols explicitly in the symbols file.
