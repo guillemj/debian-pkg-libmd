@@ -1,6 +1,7 @@
 libmd (1.0.4-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Switch to Standards-Version 4.6.0 (no changes needed).
 
  -- Guillem Jover <guillem@debian.org>  Wed, 06 Oct 2021 00:22:20 +0200
 
