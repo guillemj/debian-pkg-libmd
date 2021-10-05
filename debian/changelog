@@ -1,3 +1,9 @@
+libmd (1.0.4-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Guillem Jover <guillem@debian.org>  Wed, 06 Oct 2021 00:22:20 +0200
+
 libmd (1.0.3-3) unstable; urgency=medium
 
   * Source-only upload for testing migration.
