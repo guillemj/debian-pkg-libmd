@@ -45,6 +45,7 @@ Package: libmd0-udeb
 Package-Type: udeb
 Section: debian-installer
 Architecture: any
+Build-Profiles: <!noudeb>
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
