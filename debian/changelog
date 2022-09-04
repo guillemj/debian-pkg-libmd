@@ -1,6 +1,7 @@
 libmd (1.0.4-3) UNRELEASED; urgency=medium
 
   * Switch to Standards-Version 4.6.2 (no changes needed).
+  * Minimize upstream signing certificate.
 
  -- Guillem Jover <guillem@debian.org>  Thu, 12 Jan 2023 23:42:22 +0100
 
