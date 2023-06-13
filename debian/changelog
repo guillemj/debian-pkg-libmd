@@ -1,5 +1,6 @@
-libmd (1.0.4-3) UNRELEASED; urgency=medium
+libmd (1.1.0-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
   * Switch to Standards-Version 4.6.2 (no changes needed).
   * Minimize upstream signing certificate.
   * Do not trim debian/changelog.
