@@ -1,4 +1,4 @@
-libmd (1.1.0-1) UNRELEASED; urgency=medium
+libmd (1.1.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Switch to Standards-Version 4.6.2 (no changes needed).
@@ -7,7 +7,7 @@ libmd (1.1.0-1) UNRELEASED; urgency=medium
   * Make globs in debhelper fragment files more specific.
   * Switch from hardening=+bindnow to hardening=+all.
 
- -- Guillem Jover <guillem@debian.org>  Thu, 12 Jan 2023 23:42:22 +0100
+ -- Guillem Jover <guillem@debian.org>  Wed, 14 Jun 2023 00:19:59 +0200
 
 libmd (1.0.4-2) unstable; urgency=medium
 
