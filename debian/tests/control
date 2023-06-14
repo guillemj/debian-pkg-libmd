@@ -5,4 +5,4 @@ Restrictions:
 Depends:
  @,
  build-essential,
- pkg-config,
+ pkgconf,
