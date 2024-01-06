@@ -29,7 +29,7 @@ Description: message digest functions from BSD systems - development files
   * MD5
   * RIPEMD-160
   * SHA-1
-  * SHA-2 (SHA-256, SHA-384 and SHA-512)
+  * SHA-2 (SHA-224, SHA-256, SHA-384, SHA-512/256 and SHA-512)
 
 Package: libmd0
 Architecture: any
