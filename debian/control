@@ -1,6 +1,5 @@
 Source: libmd
 Section: libs
-Priority: optional
 Maintainer: Guillem Jover <guillem@debian.org>
 Vcs-Browser: https://git.hadrons.org/cgit/debian/pkgs/libmd.git
 Vcs-Git: https://git.hadrons.org/git/debian/pkgs/libmd.git
