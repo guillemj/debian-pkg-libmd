@@ -1,3 +1,9 @@
+libmd (1.1.0-3) UNRELEASED; urgency=medium
+
+  * Remove «Rules-Requires-Root: no», which is the current default.
+
+ -- Guillem Jover <guillem@debian.org>  Sun, 10 Aug 2025 19:52:30 +0200
+
 libmd (1.1.0-2) unstable; urgency=medium
 
   * Switch autopkgtest dependency from pkg-config to pkgconf.
