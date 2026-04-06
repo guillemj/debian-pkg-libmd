@@ -1,3 +1,4 @@
-Repository: https://git.hadrons.org/git/libmd.git
-Repository-Browse: https://git.hadrons.org/cgit/libmd.git
-Bug-Submit: libbsd@lists.freekdesktop.org
+Repository: https://gitlab.freedesktop.org/libbsd/libmd.git
+Repository-Browse: https://gitlab.freedesktop.org/libbsd/libmd
+Bug-Database: https://gitlab.freedesktop.org/libbsd/libmd/-/issues
+Bug-Submit: https://gitlab.freedesktop.org/libbsd/libmd/-/issues/new
