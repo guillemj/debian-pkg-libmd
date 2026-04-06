@@ -7,6 +7,8 @@ libmd (1.1.0-3) UNRELEASED; urgency=medium
   * Add spaces around make assignment operators to distinguish from shell ones.
   * Update upstream metadata.
   * Refactor common description into a source stanza Description field.
+  * Remove build dependency on debhelper (>= 13.10) implied by
+    debhelper-compat (= 13) since Debian bookworm.
 
  -- Guillem Jover <guillem@debian.org>  Sun, 10 Aug 2025 19:52:30 +0200
 
