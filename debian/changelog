@@ -4,6 +4,7 @@ libmd (1.1.0-3) UNRELEASED; urgency=medium
   * Remove «Priority: optional», which is the current default.
   * Switch to debian/watch version 5.
   * Switch to Standards-Version 4.7.4 (no changes needed).
+  * Add spaces around make assignment operators to distinguish from shell ones.
 
  -- Guillem Jover <guillem@debian.org>  Sun, 10 Aug 2025 19:52:30 +0200
 
