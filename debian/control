@@ -8,6 +8,10 @@ Standards-Version: 4.7.4
 Build-Depends:
  debhelper-compat (= 13),
  debhelper (>= 13.10),
+Description: message digest functions from BSD systems
+ The libmd library provides various message digest ("hash") functions,
+ as found on various BSDs on a library with the same name and with a
+ compatible API.
 
 Package: libmd-dev
 Section: libdevel
@@ -16,7 +20,7 @@ Multi-Arch: same
 Depends:
  libmd0 (= ${binary:Version}),
  ${misc:Depends},
-Description: message digest functions from BSD systems - development files
+Description: ${source:Synopsis} - development files
  This package contains the header files and static library needed to
  compile applications that use libmd.
  .
@@ -35,10 +39,11 @@ Multi-Arch: same
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
-Description: message digest functions from BSD systems - shared library
- The libmd library provides various message digest ("hash") functions,
- as found on various BSDs on a library with the same name and with a
- compatible API.
+Description: ${source:Synopsis} - shared library
+ ${source:Extended-Description}
+ .
+ For a list of the provided functions, please see the libmd-dev package
+ description.
 
 Package: libmd0-udeb
 Package-Type: udeb
@@ -48,7 +53,8 @@ Build-Profiles: <!noudeb>
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
-Description: message digest functions from BSD systems - shared library
- The libmd library provides various message digest ("hash") functions,
- as found on various BSDs on a library with the same name and with a
- compatible API.
+Description: ${source:Synopsis} - udeb shared library
+ ${source:Extended-Description}
+ .
+ For a list of the provided functions, please see the libmd-dev package
+ description.

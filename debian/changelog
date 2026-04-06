@@ -6,6 +6,7 @@ libmd (1.1.0-3) UNRELEASED; urgency=medium
   * Switch to Standards-Version 4.7.4 (no changes needed).
   * Add spaces around make assignment operators to distinguish from shell ones.
   * Update upstream metadata.
+  * Refactor common description into a source stanza Description field.
 
  -- Guillem Jover <guillem@debian.org>  Sun, 10 Aug 2025 19:52:30 +0200
 
