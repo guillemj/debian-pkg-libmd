@@ -1,4 +1,4 @@
-libmd (1.2.0-1) UNRELEASED; urgency=medium
+libmd (1.2.0-1) unstable; urgency=medium
 
   * New upstream release.
     - Add SHA3 and SHAKE support.
@@ -12,7 +12,7 @@ libmd (1.2.0-1) UNRELEASED; urgency=medium
   * Remove build dependency on debhelper (>= 13.10) implied by
     debhelper-compat (= 13) since Debian bookworm.
 
- -- Guillem Jover <guillem@debian.org>  Sun, 10 Aug 2025 19:52:30 +0200
+ -- Guillem Jover <guillem@debian.org>  Sun, 10 May 2026 22:52:01 +0200
 
 libmd (1.1.0-2) unstable; urgency=medium
 
