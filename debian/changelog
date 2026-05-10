@@ -1,5 +1,7 @@
-libmd (1.1.0-3) UNRELEASED; urgency=medium
+libmd (1.2.0-1) UNRELEASED; urgency=medium
 
+  * New upstream release.
+    - Add SHA3 and SHAKE support.
   * Remove «Rules-Requires-Root: no», which is the current default.
   * Remove «Priority: optional», which is the current default.
   * Switch to debian/watch version 5.
