@@ -31,6 +31,7 @@ Description: ${source:Synopsis} - development files
   * RIPEMD-160
   * SHA-1
   * SHA-2 (SHA-224, SHA-256, SHA-384, SHA-512/256 and SHA-512)
+  * SHA-3 (SHA3-224, SHA3-256, SHA3-384, SHA3-512, SHAKE-128, SHAKE-256)
 
 Package: libmd0
 Architecture: any
